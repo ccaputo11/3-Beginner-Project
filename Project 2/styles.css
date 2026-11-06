@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF3E6;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 40px;
+}
+
+h1 {
+    color: #A64B2A;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #8B5E3C;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: #D97742;
+    color: white;
+    width: 200px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+/* Fall emojis */
+.emoji {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* Shake when hovering */
+.card:hover {
+    animation: shake 0.5s;
+    cursor: pointer;
+}
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(3deg); }
+    50% { transform: rotate(-3deg); }
+    75% { transform: rotate(3deg); }
+    100% { transform: rotate(0deg); }
+}
+
